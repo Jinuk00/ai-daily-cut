@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Cut Uploader</title>
+<style>
+  /* Layout: single readable column, legal-document conventions (numbered sections, effective date up top). */
+  :root {
+    --bg: #ffffff; --fg: #1a1c20; --muted: #5d6470; --line: #e3e5e9; --accent: #d9771f;
+    --display: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    --body: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b0c0e; --fg: #eceef1; --muted: #a3a9b4; --line: #262a31; --accent: #ff9d3a; color-scheme: dark } }
+  :root[data-theme="dark"] { --bg: #0b0c0e; --fg: #eceef1; --muted: #a3a9b4; --line: #262a31; --accent: #ff9d3a; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.7 var(--body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px; }
+  main { max-width: 68ch; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  h1 { font: 800 30px/1.25 var(--display); margin: 0; text-wrap: balance; }
+  h2 { font: 700 19px/1.35 var(--display); margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  section { border-top: 1px solid var(--line); padding-top: 18px; }
+  p, li { margin: 0 0 8px; } ul { padding-left: 20px; margin: 0; }
+  .en { color: var(--muted); font-size: 15px; }
+  code { font: 14px Menlo, monospace; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AI 데일리컷 Uploader</h1>
+    <p class="meta">YouTube 채널 <a href="https://www.youtube.com/channel/UCmwgCzFPy7lVNh373hvOJIQ">AI 데일리컷</a> 운영자의 개인용 업로드 도구 · Personal upload tool of the AI 데일리컷 channel owner</p>
+  </header>
+  <section>
+    <h2>무엇을 하나요 · What it does</h2>
+    <p>채널 운영자가 직접 만든 짧은 AI·개발 도구 소개 영상을 운영자 컴퓨터에서 검토하고, 승인한 영상만 YouTube API Services로 운영자 본인의 채널에 업로드합니다. 다른 사용자에게 제공되지 않습니다.</p>
+    <p class="en">The channel owner reviews short videos about AI and developer tools on their own computer and uploads only the approved ones to their own YouTube channel using YouTube API Services. It is not offered to other users.</p>
+  </section>
+  <section>
+    <h2>문서 · Documents</h2>
+    <ul>
+      <li><a href="privacy.html">개인정보처리방침 · Privacy Policy</a></li>
+      <li><a href="terms.html">서비스 약관 · Terms of Service</a></li>
+      <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>문의 · Contact</h2>
+    <p>aidailycuts.studio@gmail.com</p>
+  </section>
+</main>
+</body>
+</html>
