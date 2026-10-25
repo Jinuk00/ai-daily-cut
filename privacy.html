@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Cut Privacy</title>
+<style>
+  /* Layout: single readable column, legal-document conventions (numbered sections, effective date up top). */
+  :root {
+    --bg: #ffffff; --fg: #1a1c20; --muted: #5d6470; --line: #e3e5e9; --accent: #d9771f;
+    --display: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    --body: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b0c0e; --fg: #eceef1; --muted: #a3a9b4; --line: #262a31; --accent: #ff9d3a; color-scheme: dark } }
+  :root[data-theme="dark"] { --bg: #0b0c0e; --fg: #eceef1; --muted: #a3a9b4; --line: #262a31; --accent: #ff9d3a; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.7 var(--body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px; }
+  main { max-width: 68ch; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  h1 { font: 800 30px/1.25 var(--display); margin: 0; text-wrap: balance; }
+  h2 { font: 700 19px/1.35 var(--display); margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  section { border-top: 1px solid var(--line); padding-top: 18px; }
+  p, li { margin: 0 0 8px; } ul { padding-left: 20px; margin: 0; }
+  .en { color: var(--muted); font-size: 15px; }
+  code { font: 14px Menlo, monospace; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AI 데일리컷 Uploader — Privacy Policy</h1>
+    <p class="meta">시행일 Effective date: 2026-10-25 · 운영 Operator: AI 데일리컷 (YouTube channel owner)</p>
+  </header>
+
+  <section>
+    <h2>1. 이 앱은 무엇인가요 · What this app is</h2>
+    <p>AI 데일리컷 Uploader는 채널 운영자 본인이 자신의 컴퓨터에서 실행하는 개인용 도구입니다. 운영자가 직접 만든 짧은 영상을 검토한 뒤, 운영자 본인의 YouTube 채널에 업로드하는 데에만 쓰입니다. 일반 사용자에게 공개되거나 판매되는 서비스가 아닙니다.</p>
+    <p class="en">AI Daily Cut Uploader is a personal tool that the channel owner runs on their own computer. It is used only to review videos the owner produced and upload them to the owner's own YouTube channel. It is not offered or sold to other users.</p>
+  </section>
+
+  <section>
+    <h2>2. 사용하는 Google 데이터 · Google data we access</h2>
+    <ul>
+      <li>OAuth 범위 두 가지만 요청합니다: <code>youtube.upload</code>(운영자 채널에 영상 업로드)와 <code>youtube.readonly</code>(업로드 직전에 로그인한 채널이 운영자의 채널인지 확인하는 용도로만 사용).</li>
+      <li>공개 YouTube Data API(API 키)로 운영자 채널 영상의 공개 조회수만 읽습니다.</li>
+      <li>다른 사람의 계정, 구독자 정보, 시청 기록, 댓글, 이메일 등은 수집하지 않습니다.</li>
+    </ul>
+    <p class="en">Only two OAuth scopes are requested: <code>youtube.upload</code> to upload videos to the owner's channel, and <code>youtube.readonly</code> used solely to confirm, right before uploading, that the signed-in channel is the owner's channel. The public YouTube Data API (API key) is used to read public view counts of the owner's own videos. No data about other users, subscribers, watch history, comments or email is collected.</p>
+  </section>
+
+  <section>
+    <h2>3. 저장과 보관 · Storage and retention</h2>
+    <p>OAuth 토큰은 운영자 컴퓨터에만 파일로 저장되며(소유자만 읽을 수 있는 권한), 외부 서버로 전송되지 않습니다. 운영자는 언제든 토큰 파일을 지우거나 <a href="https://myaccount.google.com/permissions">Google 계정 권한 페이지</a>에서 접근 권한을 철회할 수 있습니다.</p>
+    <p class="en">OAuth tokens are stored only as a file on the owner's computer (owner-only permissions) and are never sent to any other server. Access can be revoked at any time by deleting the token file or at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+  </section>
+
+  <section>
+    <h2>4. 공유 · Sharing</h2>
+    <p>Google 사용자 데이터를 제3자에게 판매, 공유, 전송하지 않습니다. 광고나 분석 목적으로 사용하지 않습니다.</p>
+    <p class="en">Google user data is not sold, shared or transferred to third parties, and is not used for advertising or analytics.</p>
+  </section>
+
+  <section>
+    <h2>5. YouTube 서비스 약관 · YouTube Terms</h2>
+    <p>이 앱은 YouTube API Services를 사용합니다. 이용 시 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 함께 적용됩니다.</p>
+    <p class="en">This app uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> also applies.</p>
+  </section>
+
+  <section>
+    <h2>6. 문의 · Contact</h2>
+    <p>aidailycuts.studio@gmail.com</p>
+  </section>
+</main>
+</body>
+</html>
